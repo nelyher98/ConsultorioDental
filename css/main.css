@@ -10,6 +10,7 @@ body{font-family:Lato; background-image: url(../img/portfolio/Back5.jpeg)}
    margin-top: 50px;
 }
 
+
 .im{
     
     width: 250px;
@@ -79,6 +80,7 @@ aside{
 .flex-container{
     
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   
 }
