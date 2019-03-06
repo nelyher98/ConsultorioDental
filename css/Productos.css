@@ -20,7 +20,7 @@
 
 .Title > H2{
     
-  width: 100px;
+  width: 200px;
   margin: 10px;
   margin-top: auto;
   margin-bottom: auto;
@@ -60,4 +60,16 @@
     background-color:  deepskyblue;
     margin-left: auto;
     margin-right: auto;
+}
+
+#Acerca{
+    
+  width: 80%;
+  height: 80%;
+  display: flex;
+  background-color: aqua;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
 }
