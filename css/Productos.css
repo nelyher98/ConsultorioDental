@@ -49,11 +49,10 @@
 .Menu{
     display: flex;
     justify-content: center;
-    justify-content: flex-start;
     margin-bottom: 15px;
 }
 
-.Menu >  img{
+.Zahn{
     
     width: 60px;
     height: 60px;
