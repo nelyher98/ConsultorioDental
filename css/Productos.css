@@ -89,3 +89,10 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
   border-radius: 5px;
 }
+
+@media(max-width:600px){ 
+    
+    .Title{
+    display: inline-block;
+    width: 80%;
+    }

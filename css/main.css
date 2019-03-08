@@ -151,3 +151,27 @@ a:hover {
     margin-top: -160px;
     margin-bottom: 150px;
 }
+
+
+@media(max-width:600px){ 
+    
+    aside{
+    display: inline-block;
+    width: 50%;
+    }
+    
+    .container{
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .wrap{
+        display: inline-block;
+        width: -50px;
+    }
+    .searchTerm{
+        display: inline-block;
+        width: 100%;
+    }
+    
+}
