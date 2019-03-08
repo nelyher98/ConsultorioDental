@@ -1,14 +1,19 @@
 .Flex3{
     
+    display: flex;
+    display: block;
     margin-top: 80px;
     height: 600px;
     justify-content: center;
 }
 
-.Flex3 > div{
-   margin-top: 5px;
+.sub3{
+    
+   
    margin: 10px;
    margin-left: 40px;
+   margin-top: 50px;
+    
 }
 
 aside{
@@ -52,4 +57,16 @@ footer{
     background-color: #4CAF50;
     border: none;
     border-radius: 5px;
+}
+
+:link {
+  color: black; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: skyblue;
+  background-color: transparent;
+  text-decoration: underline;
 }

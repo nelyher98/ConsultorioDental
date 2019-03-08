@@ -20,13 +20,15 @@
         
         <link rel="stylesheet" href="../css/freelancer.min.css">
         <link rel="stylesheet" href="../css/Login.css">
+        <script src="../js/main.js"></script>
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="../js/Cancelar.js"></script>
         
     </head>
     <body>
-       
+        
+        <form action="Citas.html" method = "POST" name=form>   
                 <div class="container">
                     <div class="imgcontainer">
                         <img src="../img/Logo2.1.png"  class="avatar">
@@ -36,12 +38,11 @@
                     
                     <div class="buttons">
                         
-                        <button type="submit" onclick="window.location='Citas.html';return false;">Aceptar</button>
+                        <button type="submit" onclick=go()>Aceptar</button>
                         <button type="button" onclick="window.location='Index.html';return false;" class="cancelbtn">Cancelar</button>
-                        
                     </div>  
-                </div>
-
+                </div>  
+        </form>
 
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
