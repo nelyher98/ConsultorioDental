@@ -5,5 +5,6 @@ function go(){
         window.location='<?php echo base_url(); ?>Controller/Citas';
     }else{
         alert("Por favor, ingrese un usuario y contraseña");
+        window.location='<?php echo base_url(); ?>Controller/Login';
     }
 }

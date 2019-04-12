@@ -17,9 +17,9 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/freelancer.css">
         
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/freelancer.min.css">
-        
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/Productos.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/Citas.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/Ver.css">
         
         <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 
@@ -50,61 +50,25 @@
     <!-- Portfolio Grid Section -->
     <section class="Flex4">
         
-        <form action="INSERT" method = "POST">
-                    
-            <table>
-               
+       <table>
             <tr>
-                <td>Nombre: </td>
-                <td> <input type = "text" name = "name"> </td>
+                <th>idPaciente</th>  
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Telefono</th>
             </tr>
-               
+            <?php
+            foreach ($Pacientes as $p){ ?>
              <tr>
-                <td>Apellidos: </td>
-                <td> <input type = "text" name = "ape"> </td>
-             </tr>
-                <tr><td>&nbsp;</td></tr>
-             <tr>
-                 <td colspan="2">Enfermedades que pueden afectar el tratamiento:</td>
-                 <td> <input type = "text" name = "enfer"> </td>
-             </tr>
-                <tr><td>&nbsp;</td></tr>
-               
-            <tr>
-                <td>Presión: </td>
-                <td> <input type = "text" name = "Pre"> </td>
+                <td><?php echo $p->idPac ?></td>
+                <td><?php echo $p->nombre ?></td>
+                <td><?php echo $p->apellidos ?></td>
+                <td><?php echo $p->telefono?></td>
             </tr>
-               
-             <tr>
-                <td>Alergias: </td>
-                <td> <input type = "text" name = "Ale"> </td>
-             </tr>
-               <tr><td>&nbsp;</td></tr>
-             <tr>
-                 <td>Urgencia:</td>
-                 <td> <input type = "text" name = "Urg"> </td>
-             </tr>
-                <tr><td>&nbsp;</td></tr>
-            <tr>
-                <td>Teléfono de contacto: </td>
-                <td> <input type = "text" name = "Tel"> </td>
-           </tr>
-            
-           <tr>
-                <td>¿Cómo se enteró del consultorio? </td>
-           </tr>
-                <tr><td>&nbsp;</td></tr>
-           <tr>
-              <td colspan="2"><textarea cols="25" name="com"></textarea> </td> 
-           </tr>
-                <tr><td>&nbsp;</td></tr>
-            </table> 
-            
-            <br>
-            <input type="Submit" name="Guardar" value="Guardar" id="btn"> 
-         
-        </form>
         
+        <?php } ?>
+        </table>
+   
     </section>
 
     <!-- Footer -->
@@ -122,3 +86,4 @@
         <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
     </body>
 </html>
+

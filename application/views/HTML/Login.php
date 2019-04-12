@@ -28,7 +28,7 @@
     </head>
     <body>
         
-        <form action="<?php echo base_url(); ?>Controller/Citas" method = "POST" name=form>   
+         <form action="<?php echo base_url(); ?>Controller/Citas" method = "POST" name=form>  
                 <div class="container">
                     <div class="imgcontainer">
                         <img src="<?php echo base_url(); ?>assets/img/Logo2.1.png"  class="avatar">
